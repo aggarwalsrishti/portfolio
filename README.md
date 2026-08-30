@@ -16,7 +16,6 @@ Click the cover image below to watch the complete portfolio walkthrough on YouTu
 
 [![Srishti Aggarwal Developer Portfolio](assets/coverphoto.png)](https://youtu.be/h345lv1bFsE)
 
-**▶️ [Watch the Full Portfolio Walkthrough on YouTube](https://youtu.be/h345lv1bFsE)**
 
 ---
 
