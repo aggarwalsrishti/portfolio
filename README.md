@@ -148,12 +148,18 @@ The layout, navigation, project cards, buttons, and content sections adapt to sm
 ```text
 portfolio/
 │
-├── index.html
 ├── assets/
-│   └── coverphoto.jpg
+│   └── coverphoto.png
 │
+├── images/
+│   ├── coffeeapp.jpg
+│   └── memory-mirror.png
+│
+├── index.html
+├── stylec.css
 └── README.md
 ```
+
 
 ---
 
