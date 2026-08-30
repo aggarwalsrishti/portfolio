@@ -2,24 +2,28 @@
 
 A professional developer portfolio showcasing my projects, technical skills, coding profiles, and development work.
 
-🔗 **Live Portfolio:**
+🌐 **Live Portfolio:**
 https://portfolio-six-nu-51.vercel.app/
 
 ---
 
 ## Portfolio Demo
 
-A walkthrough of my personal developer portfolio, showcasing the design, featured projects, technical skills, developer profiles, and responsive interface.
+A complete walkthrough of my personal developer portfolio, including the interface, featured projects, technical skills, developer profiles, and responsive design.
 
-https://github.com/user-attachments/assets/portfolio-video.mp4
+**Watch the full portfolio walkthrough on YouTube:**
+
+[![Srishti Aggarwal Developer Portfolio — Website Walkthrough](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
 ---
 
 ## Overview
 
-This portfolio serves as a central place to present my development work and technical profile as a BTech Information Technology student at **Maharaja Agrasen Institute of Technology (MAIT)**.
+This portfolio serves as a central place to present my development work and technical profile as a **BTech Information Technology student at Maharaja Agrasen Institute of Technology (MAIT)**.
 
-My current focus is on software development, with particular interest in **Android Development, Kotlin, Jetpack Compose, Java, and problem solving**.
+It highlights my work across software development, with a current focus on **Android Development, Kotlin, Jetpack Compose, Java, and problem solving**.
+
+The portfolio is designed to provide a concise overview of my projects, technical skills, coding profiles, and current areas of development.
 
 ---
 
@@ -29,7 +33,7 @@ My current focus is on software development, with particular interest in **Andro
 
 A voice-powered reflection platform that compares a user's past and present voice reflections to identify meaningful changes in communication and expression over time.
 
-**Key Features**
+#### Key Features
 
 * Voice journaling
 * Automatic speech transcription
@@ -40,20 +44,23 @@ A voice-powered reflection platform that compares a user's past and present voic
 * Google authentication
 * Cloud storage
 
-**Technologies**
+#### Technologies
 
 `React` `Vite` `JavaScript` `Tailwind CSS` `Node.js` `Express` `Firebase` `Deepgram` `Gemini API` `Vercel`
 
 **Repository:**
 https://github.com/aggarwalsrishti/memory-mirror-ai
 
+**Live Demo:**
+https://memory-mirror-ai-ko3u.vercel.app/
+
 ---
 
 ### Coffee App — In Progress
 
-A modern Android coffee application developed with Kotlin and Jetpack Compose to practice modern Android UI development, navigation, reusable components, and interactive interfaces.
+A modern Android coffee application developed with Kotlin and Jetpack Compose to practice contemporary Android UI development and build a responsive mobile ordering experience.
 
-**Technologies**
+#### Technologies
 
 `Kotlin` `Jetpack Compose` `Android` `Gradle`
 
@@ -84,7 +91,23 @@ https://github.com/aggarwalsrishti/Coffee-App
 
 ---
 
+## Technology
+
+The portfolio is built using:
+
+* HTML
+* CSS
+* JavaScript
+* Responsive Design
+* CSS Animations
+* Intersection Observer API
+* Vercel
+
+---
+
 ## Contact
+
+For professional opportunities, collaboration, or technology-related discussions:
 
 **Email:** [srishtiaggarwal134@gmail.com](mailto:srishtiaggarwal134@gmail.com)
 
