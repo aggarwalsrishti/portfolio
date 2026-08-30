@@ -1,118 +1,202 @@
 # Srishti Aggarwal — Developer Portfolio
 
-A professional developer portfolio showcasing my projects, technical skills, coding profiles, and development work.
-
-🌐 **Live Portfolio:**
-https://portfolio-six-nu-51.vercel.app/
+A professional developer portfolio showcasing my projects, technical skills, coding profiles, and development work across web and Android development.
 
 ---
 
-## Portfolio Demo
+## 🌐 Live Website
 
-A complete walkthrough of my personal developer portfolio, including the interface, featured projects, technical skills, developer profiles, and responsive design.
-
-**Watch the full portfolio walkthrough on YouTube:**
-
-[![Srishti Aggarwal Developer Portfolio — Website Walkthrough](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+**[Visit My Portfolio](https://portfolio-six-nu-51.vercel.app/)**
 
 ---
 
-## Overview
+## 🎥 Portfolio Walkthrough
 
-This portfolio serves as a central place to present my development work and technical profile as a **BTech Information Technology student at Maharaja Agrasen Institute of Technology (MAIT)**.
+Click the cover image below to watch the complete portfolio walkthrough on YouTube.
 
-It highlights my work across software development, with a current focus on **Android Development, Kotlin, Jetpack Compose, Java, and problem solving**.
+[![Srishti Aggarwal Developer Portfolio](assets/coverphoto.png)](https://youtu.be/h345lv1bFsE)
 
-The portfolio is designed to provide a concise overview of my projects, technical skills, coding profiles, and current areas of development.
+**▶️ [Watch the Full Portfolio Walkthrough on YouTube](https://youtu.be/h345lv1bFsE)**
 
 ---
 
-## Featured Projects
+## 📌 Overview
 
-### Memory Mirror AI
+This portfolio website is designed to present my technical background, projects, skills, and developer profiles in a structured and professional manner.
+
+The website includes:
+
+* Professional introduction and developer profile
+* Featured projects with live demos and source code
+* Technical skills and technologies
+* GitHub, LinkedIn, LeetCode, and HackerRank profiles
+* Responsive design for desktop, tablet, and mobile devices
+* Smooth navigation and scrolling
+* Interactive hover effects and animations
+* Mobile-friendly navigation menu
+* Contact section with social and email links
+
+---
+
+## 🚀 Featured Projects
+
+### 1. Memory Mirror AI
 
 A voice-powered reflection platform that compares a user's past and present voice reflections to identify meaningful changes in communication and expression over time.
 
-#### Key Features
+**Key Features:**
 
 * Voice journaling
-* Automatic speech transcription
 * Past vs. present voice comparison
+* Automatic speech transcription
 * Speech metrics
 * AI-powered reflection analysis
 * Personalized insights
 * Google authentication
 * Cloud storage
 
-#### Technologies
+**Technologies:**
 
 `React` `Vite` `JavaScript` `Tailwind CSS` `Node.js` `Express` `Firebase` `Deepgram` `Gemini API` `Vercel`
 
-**Repository:**
-https://github.com/aggarwalsrishti/memory-mirror-ai
-
-**Live Demo:**
-https://memory-mirror-ai-ko3u.vercel.app/
+**[Live Demo](https://memory-mirror-ai-ko3u.vercel.app/)** · **[GitHub Repository](https://github.com/aggarwalsrishti/memory-mirror-ai)**
 
 ---
 
-### Coffee App — In Progress
+### 2. Coffee App
 
-A modern Android coffee application developed with Kotlin and Jetpack Compose to practice contemporary Android UI development and build a responsive mobile ordering experience.
+A modern Android coffee application currently in progress, developed to practice modern Android UI development and build a clean, responsive mobile ordering experience.
 
-#### Technologies
+The project focuses on:
+
+* Jetpack Compose UI development
+* Modern Android layouts
+* Navigation
+* Reusable components
+* Interactive interfaces
+* Responsive mobile UI
+
+**Technologies:**
 
 `Kotlin` `Jetpack Compose` `Android` `Gradle`
 
-**Repository:**
-https://github.com/aggarwalsrishti/Coffee-App
+**[GitHub Repository](https://github.com/aggarwalsrishti/Coffee-App)**
 
 ---
 
-## Technical Skills
+## 🛠️ Technologies & Skills
 
-| Category            | Technologies                      |
-| ------------------- | --------------------------------- |
-| Programming         | Java, Kotlin, C, Python           |
-| Android Development | Kotlin, Jetpack Compose           |
-| Web Development     | HTML, CSS                         |
-| Backend & Database  | Firebase, MySQL                   |
-| Tools & Platforms   | Git, GitHub, Vercel               |
-| Problem Solving     | Data Structures & Algorithms, OOP |
+### Programming
 
----
+* Java
+* Kotlin
+* C
+* Python
 
-## Developer Profiles
+### Android Development
 
-* **LinkedIn:** https://www.linkedin.com/in/srishti-aggarwal-tech/
-* **GitHub:** https://github.com/aggarwalsrishti
-* **LeetCode:** https://leetcode.com/u/aggarwalsrishti/
-* **HackerRank:** https://www.hackerrank.com/profile/srishtiaggarwa11
+* Kotlin
+* Jetpack Compose
 
----
-
-## Technology
-
-The portfolio is built using:
+### Web Development
 
 * HTML
 * CSS
-* JavaScript
-* Responsive Design
-* CSS Animations
-* Intersection Observer API
+
+### Backend & Database
+
+* Firebase
+* MySQL
+
+### Tools & Platforms
+
+* Git & GitHub
 * Vercel
+
+### Problem Solving
+
+* Data Structures & Algorithms
+* Object-Oriented Programming
 
 ---
 
-## Contact
+## 👩‍💻 Developer Profiles
 
-For professional opportunities, collaboration, or technology-related discussions:
+| Platform   | Profile                                                                 |
+| ---------- | ----------------------------------------------------------------------- |
+| LinkedIn   | [Srishti Aggarwal](https://www.linkedin.com/in/srishti-aggarwal-tech/)  |
+| GitHub     | [aggarwalsrishti](https://github.com/aggarwalsrishti)                   |
+| LeetCode   | [aggarwalsrishti](https://leetcode.com/u/aggarwalsrishti/)              |
+| HackerRank | [srishtiaggarwa11](https://www.hackerrank.com/profile/srishtiaggarwa11) |
+
+---
+
+## 📱 Responsive Design
+
+The portfolio is designed to provide a consistent experience across different screen sizes, including:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+The layout, navigation, project cards, buttons, and content sections adapt to smaller screens for improved usability.
+
+---
+
+## 📂 Project Structure
+
+```text
+portfolio/
+│
+├── index.html
+├── assets/
+│   └── coverphoto.jpg
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Running Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/aggarwalsrishti/portfolio.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd portfolio
+```
+
+Open `index.html` in your browser.
+
+No additional dependencies are required for the basic portfolio website.
+
+---
+
+## 📬 Contact
+
+I'm open to connecting with fellow developers, collaborators, and professionals interested in technology and software development.
 
 **Email:** [srishtiaggarwal134@gmail.com](mailto:srishtiaggarwal134@gmail.com)
 
-**LinkedIn:** https://www.linkedin.com/in/srishti-aggarwal-tech/
+**LinkedIn:**
+https://www.linkedin.com/in/srishti-aggarwal-tech/
+
+**GitHub:**
+https://github.com/aggarwalsrishti
 
 ---
 
-© 2026 Srishti Aggarwal
+## 📄 License
+
+This project is created for personal portfolio and professional showcase purposes.
+
+© 2026 Srishti Aggarwal. All rights reserved.
+
+```
+```
