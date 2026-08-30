@@ -1,0 +1,2341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Srishti Aggarwal | Developer Portfolio</title>
+
+  <meta
+    name="description"
+    content="Professional developer portfolio of Srishti Aggarwal - BTech IT Student, Developer, and Problem Solver."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --bg: #080808;
+      --bg-soft: #0f0f12;
+      --panel: rgba(18, 18, 24, 0.72);
+      --panel-solid: #111116;
+
+      --text: #f5f5f7;
+      --text-soft: #b4b4be;
+      --muted: #8d8d98;
+
+      --border: rgba(255, 255, 255, 0.08);
+      --border-purple: rgba(167, 139, 250, 0.22);
+
+      --primary: #8b5cf6;
+      --primary-soft: #a78bfa;
+      --primary-deep: #4c1d95;
+      --lavender: #c4b5fd;
+
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+      --shadow-glow:
+        0 0 0 1px rgba(139, 92, 246, 0.12),
+        0 10px 40px rgba(76, 29, 149, 0.22);
+
+      --radius: 20px;
+      --transition: 220ms ease;
+
+      --container: 1180px;
+      --nav-h: 76px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(76, 29, 149, 0.24),
+          transparent 34%
+        ),
+        radial-gradient(
+          circle at 85% 12%,
+          rgba(139, 92, 246, 0.14),
+          transparent 20%
+        ),
+        linear-gradient(
+          180deg,
+          #050505 0%,
+          #080808 28%,
+          #0b0a12 100%
+        );
+
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent 0%,
+          rgba(139, 92, 246, 0.02) 50%,
+          transparent 100%
+        );
+
+      z-index: -1;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 2rem));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 5.5rem 0;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: clamp(1.9rem, 3vw, 2.8rem);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      letter-spacing: -0.03em;
+    }
+
+    .section-subtitle {
+      max-width: 720px;
+      color: var(--text-soft);
+      font-size: 1rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      padding: 0.45rem 0.85rem;
+      margin-bottom: 1.2rem;
+
+      border-radius: 999px;
+      border: 1px solid var(--border-purple);
+
+      background: rgba(139, 92, 246, 0.08);
+
+      color: var(--lavender);
+      font-size: 0.9rem;
+
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .eyebrow::before {
+      content: "";
+
+      width: 8px;
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: linear-gradient(
+        180deg,
+        var(--primary-soft),
+        var(--primary)
+      );
+
+      box-shadow: 0 0 18px rgba(139, 92, 246, 0.6);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.4rem;
+    }
+
+    .card {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(20, 20, 27, 0.82),
+          rgba(12, 12, 16, 0.9)
+        );
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      box-shadow: var(--shadow);
+
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--border-purple);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .btn-row,
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+
+      padding: 0.9rem 1.3rem;
+
+      border-radius: 14px;
+      border: 1px solid transparent;
+
+      transition:
+        transform var(--transition),
+        box-shadow var(--transition),
+        background var(--transition),
+        border-color var(--transition);
+
+      cursor: pointer;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-deep)
+      );
+
+      color: white;
+
+      box-shadow:
+        0 10px 26px rgba(76, 29, 149, 0.34);
+    }
+
+    .btn-primary:hover {
+      box-shadow:
+        0 14px 34px rgba(139, 92, 246, 0.3);
+    }
+
+    .btn-secondary {
+      border-color: var(--border-purple);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--text);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(139, 92, 246, 0.08);
+
+      box-shadow:
+        0 0 0 1px rgba(139, 92, 246, 0.18);
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0.55rem 0.82rem;
+
+      border-radius: 999px;
+
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+
+      color: var(--text-soft);
+      font-size: 0.9rem;
+    }
+
+    .tech-chip {
+      background:
+        linear-gradient(
+          180deg,
+          rgba(139, 92, 246, 0.12),
+          rgba(167, 139, 250, 0.06)
+        );
+
+      border-color: rgba(167, 139, 250, 0.18);
+      color: #ddd6fe;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      transition:
+        background var(--transition),
+        border-color var(--transition),
+        box-shadow var(--transition);
+    }
+
+    .site-header.scrolled {
+      background: rgba(8, 8, 8, 0.72);
+
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
+
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+      box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.18);
+    }
+
+    .nav {
+      height: var(--nav-h);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 1rem;
+    }
+
+    .brand {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+    }
+
+    .nav-links a {
+      color: var(--text-soft);
+      font-weight: 500;
+
+      position: relative;
+
+      transition: color var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--text);
+    }
+
+    .nav-links a::after {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      bottom: -0.35rem;
+
+      width: 100%;
+      height: 2px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--primary),
+          var(--primary-soft)
+        );
+
+      transform: scaleX(0);
+      transform-origin: left;
+
+      transition: transform var(--transition);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      transform: scaleX(1);
+    }
+
+    .menu-toggle {
+      display: none;
+
+      width: 46px;
+      height: 46px;
+
+      border-radius: 12px;
+
+      border: 1px solid var(--border);
+
+      background: rgba(255, 255, 255, 0.02);
+
+      color: var(--text);
+
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+    }
+
+    .menu-toggle svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .mobile-nav {
+      display: none;
+      padding-bottom: 1rem;
+    }
+
+    .mobile-nav.open {
+      display: block;
+    }
+
+    .mobile-nav-card {
+      padding: 1rem;
+
+      border-radius: 18px;
+      border: 1px solid var(--border);
+
+      background: rgba(10, 10, 14, 0.8);
+
+      -webkit-backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
+    }
+
+    .mobile-nav a {
+      display: block;
+
+      padding: 0.9rem 0.25rem;
+
+      color: var(--text-soft);
+
+      border-bottom:
+        1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .mobile-nav a:last-child {
+      border-bottom: none;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      padding: 5.5rem 0 3.5rem;
+
+      min-height:
+        calc(100vh - var(--nav-h));
+
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-grid {
+      display: grid;
+
+      grid-template-columns: 1fr;
+
+      align-items: center;
+
+      gap: 2rem;
+
+      max-width: 900px;
+    }
+
+    .hero-content h1 {
+      font-size: clamp(2.8rem, 7vw, 5.4rem);
+
+      line-height: 0.98;
+
+      letter-spacing: -0.05em;
+
+      margin-bottom: 1.2rem;
+
+      max-width: 12ch;
+    }
+
+    .hero-content h1 span {
+      color: var(--primary-soft);
+    }
+
+    .hero-content p {
+      max-width: 680px;
+
+      font-size: 1.08rem;
+
+      color: var(--text-soft);
+
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-tech {
+      margin-top: 1.8rem;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about-grid {
+      display: grid;
+
+      grid-template-columns:
+        1.15fr 0.85fr;
+
+      gap: 1.5rem;
+    }
+
+    .about-card,
+    .explore-card,
+    .highlight-card,
+    .contact-card {
+      padding: 1.6rem;
+    }
+
+    .about-text {
+      color: var(--text-soft);
+      font-size: 1rem;
+    }
+
+    .mini-heading {
+      font-size: 1rem;
+
+      font-weight: 700;
+
+      margin-bottom: 1rem;
+
+      color: var(--text);
+    }
+
+    .list-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 0.8rem;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+
+      gap: 0.75rem;
+
+      padding: 0.9rem 1rem;
+
+      border-radius: 16px;
+
+      background:
+        rgba(255, 255, 255, 0.025);
+
+      border:
+        1px solid rgba(255, 255, 255, 0.05);
+
+      color: var(--text-soft);
+    }
+
+    .list-item::before {
+      content: "";
+
+      width: 9px;
+      height: 9px;
+
+      border-radius: 50%;
+
+      background:
+        linear-gradient(
+          180deg,
+          var(--primary-soft),
+          var(--primary)
+        );
+
+      box-shadow:
+        0 0 18px rgba(139, 92, 246, 0.4);
+
+      flex-shrink: 0;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================= */
+
+    .projects-grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      align-items: stretch;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+
+      overflow: hidden;
+
+      min-width: 0;
+      height: 100%;
+    }
+
+    .project-media {
+      width: 100%;
+      height: 260px;
+
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(139, 92, 246, 0.16),
+          transparent 36%
+        ),
+        linear-gradient(
+          135deg,
+          rgba(18, 18, 24, 1),
+          rgba(76, 29, 149, 0.18)
+        );
+
+      border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+
+      overflow: hidden;
+
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 100%;
+
+      display: block;
+
+      object-fit: cover;
+
+      object-position: center;
+
+      transition:
+        transform 400ms ease;
+    }
+
+    .project-card:hover .project-image {
+      transform: scale(1.035);
+    }
+
+    .project-media::after {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          180deg,
+          transparent 65%,
+          rgba(0, 0, 0, 0.18)
+        );
+
+      pointer-events: none;
+    }
+
+    .project-body {
+      padding: 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 1rem;
+
+      flex: 1;
+    }
+
+    .project-title {
+      font-size: 1.35rem;
+
+      font-weight: 700;
+
+      letter-spacing: -0.02em;
+    }
+
+    .project-desc {
+      color: var(--text-soft);
+
+      font-size: 0.98rem;
+
+      line-height: 1.7;
+    }
+
+    .project-features {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 0.65rem;
+    }
+
+    .project-features .chip {
+      color: #ddd6fe;
+
+      border-color:
+        rgba(167, 139, 250, 0.16);
+
+      background:
+        rgba(139, 92, 246, 0.08);
+    }
+
+    .project-tech {
+      margin-top: auto;
+    }
+
+    .project-actions {
+      margin-top: 0.2rem;
+    }
+
+    /* =========================
+       PROFILES
+    ========================= */
+
+    .profiles-grid {
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+    }
+
+    .profile-card {
+      padding: 1.5rem;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 1rem;
+    }
+
+    .platform-icon {
+      width: 58px;
+      height: 58px;
+
+      border-radius: 16px;
+
+      display: grid;
+      place-items: center;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(139, 92, 246, 0.14),
+          rgba(139, 92, 246, 0.05)
+        );
+
+      border:
+        1px solid rgba(167, 139, 250, 0.16);
+
+      color: #e9e2ff;
+    }
+
+    .platform-icon svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .profile-card h3 {
+      font-size: 1.1rem;
+      line-height: 1.2;
+    }
+
+    .profile-card p {
+      color: var(--text-soft);
+
+      font-size: 0.96rem;
+
+      flex-grow: 1;
+    }
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills-grid {
+      grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+    }
+
+    .skill-card {
+      padding: 1.4rem;
+    }
+
+    .skill-card h3 {
+      font-size: 1.05rem;
+
+      margin-bottom: 1rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 0.7rem;
+    }
+
+    /* =========================
+       HIGHLIGHT
+    ========================= */
+
+    .highlight-grid {
+      display: grid;
+
+      grid-template-columns: 1fr;
+
+      gap: 1.4rem;
+
+      align-items: stretch;
+    }
+
+    .highlight-card p,
+    .contact-card p {
+      color: var(--text-soft);
+
+      margin-bottom: 1.2rem;
+    }
+
+    .presence-links {
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .presence-link {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 1rem;
+
+      padding: 1rem 1.1rem;
+
+      border-radius: 16px;
+
+      background:
+        rgba(255, 255, 255, 0.025);
+
+      border:
+        1px solid rgba(255, 255, 255, 0.06);
+
+      transition:
+        transform var(--transition),
+        border-color var(--transition),
+        background var(--transition);
+    }
+
+    .presence-link:hover {
+      transform: translateY(-3px);
+
+      border-color: var(--border-purple);
+
+      background:
+        rgba(139, 92, 246, 0.07);
+    }
+
+    .presence-link strong {
+      display: block;
+
+      color: var(--text);
+
+      font-size: 0.98rem;
+    }
+
+    .presence-link span {
+      color: var(--muted);
+
+      font-size: 0.92rem;
+    }
+
+    .presence-arrow {
+      color: var(--lavender) !important;
+
+      flex-shrink: 0;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-actions {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 0.9rem;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .site-footer {
+      padding: 1.8rem 0 2.5rem;
+
+      border-top:
+        1px solid rgba(255, 255, 255, 0.06);
+
+      background:
+        rgba(8, 8, 8, 0.52);
+    }
+
+    .footer-inner {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 1rem;
+
+      flex-wrap: wrap;
+    }
+
+    .footer-inner p {
+      color: var(--muted);
+
+      font-size: 0.95rem;
+    }
+
+    .footer-links {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 1rem;
+    }
+
+    .footer-links a {
+      color: var(--text-soft);
+
+      transition:
+        color var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: var(--lavender);
+    }
+
+    /* =========================
+       ANIMATION
+    ========================= */
+
+    .reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal.animate {
+      opacity: 0;
+
+      transform:
+        translateY(28px);
+
+      transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+    }
+
+    .reveal.animate.visible {
+      opacity: 1;
+
+      transform:
+        translateY(0);
+    }
+
+    .glow-line {
+      position: absolute;
+
+      left: 50%;
+      bottom: 0;
+
+      transform: translateX(-50%);
+
+      width: min(520px, 80vw);
+
+      height: 1px;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(167, 139, 250, 0.7),
+          transparent
+        );
+
+      opacity: 0.8;
+    }
+
+    /* =========================
+       TABLET
+    ========================= */
+
+    @media (max-width: 1080px) {
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 4.2rem;
+      }
+
+      .projects-grid,
+      .skills-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+
+      .profiles-grid {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 760px) {
+
+      :root {
+        --nav-h: 70px;
+      }
+
+      .section {
+        padding: 4.3rem 0;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: inline-flex;
+      }
+
+      .hero-content h1 {
+        max-width: none;
+      }
+
+      .hero {
+        padding: 3.6rem 0 2.5rem;
+      }
+
+      .btn-row {
+        width: 100%;
+      }
+
+      .btn {
+        flex: 1 1 220px;
+      }
+
+      .projects-grid,
+      .profiles-grid,
+      .skills-grid,
+      .list-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .project-media {
+        height: 220px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 520px) {
+
+      .container {
+        width:
+          min(
+            100% - 1.2rem,
+            var(--container)
+          );
+      }
+
+      .card,
+      .about-card,
+      .explore-card,
+      .highlight-card,
+      .contact-card,
+      .project-body,
+      .profile-card,
+      .skill-card {
+        border-radius: 18px;
+      }
+
+      .hero-content p,
+      .section-subtitle,
+      .about-text,
+      .project-desc,
+      .profile-card p,
+      .highlight-card p,
+      .contact-card p {
+        font-size: 0.97rem;
+      }
+
+      .project-media {
+        height: 200px;
+      }
+
+      .hero-content h1 {
+        font-size: clamp(2.6rem, 13vw, 4rem);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header class="site-header" id="top">
+
+    <div class="container">
+
+      <nav class="nav" aria-label="Primary navigation">
+
+        <a href="#home" class="brand">
+          Srishti Aggarwal
+        </a>
+
+        <div class="nav-links">
+
+          <a href="#home">Home</a>
+
+          <a href="#about">About</a>
+
+          <a href="#projects">Projects</a>
+
+          <a href="#profiles">Profiles</a>
+
+          <a href="#skills">Skills</a>
+
+          <a href="#contact">Contact</a>
+
+        </div>
+
+        <button
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+          >
+            <path d="M4 7h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 17h16"></path>
+          </svg>
+
+        </button>
+
+      </nav>
+
+      <div class="mobile-nav" id="mobileNav">
+
+        <div class="mobile-nav-card">
+
+          <a href="#home">Home</a>
+
+          <a href="#about">About</a>
+
+          <a href="#projects">Projects</a>
+
+          <a href="#profiles">Profiles</a>
+
+          <a href="#skills">Skills</a>
+
+          <a href="#contact">Contact</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero" id="home">
+
+      <div class="container">
+
+        <div class="hero-grid">
+
+          <div class="hero-content reveal">
+
+            <span class="eyebrow">
+              2nd Year BTech IT Student @ Maharaja Agrasen Institute of Technology
+            </span>
+
+            <h1>
+              Hi, I'm Srishti Aggarwal.
+            </h1>
+
+            <p>
+              I build software projects across web and Android while
+              continuously improving my problem-solving and development skills.
+            </p>
+
+            <div class="btn-row">
+
+              <a
+                class="btn btn-primary"
+                href="#projects"
+              >
+                View Projects
+              </a>
+
+              <a
+                class="btn btn-secondary"
+                href="#profiles"
+              >
+                Explore Profiles
+              </a>
+
+            </div>
+
+            <div
+              class="hero-tech chip-row"
+              aria-label="Technologies"
+            >
+
+              <span class="chip tech-chip">Kotlin</span>
+
+              <span class="chip tech-chip">Jetpack Compose</span>
+
+              <span class="chip tech-chip">Java</span>
+
+              <span class="chip tech-chip">HTML</span>
+
+              <span class="chip tech-chip">CSS</span>
+
+              <span class="chip tech-chip">Git & Github</span>
+
+              <span class="chip tech-chip">Python</span>
+
+              <span class="chip tech-chip">C</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================= -->
+
+    <section class="section" id="about">
+
+      <div class="container">
+
+        <div class="about-grid">
+
+          <article class="card about-card reveal">
+
+            <h2 class="section-title">
+              About Me
+            </h2>
+
+            <p class="about-text">
+              I'm Srishti Aggarwal, a BTech Information Technology student at
+              Maharaja Agrasen Institute of Technology (MAIT), currently in my
+              2nd year. I'm interested in software development and enjoy
+              building practical projects while continuously expanding my
+              technical skills.
+              <br><br>
+              I have explored both web and Android development, working with
+              technologies such as Java, Kotlin, Jetpack Compose, JavaScript,
+              React, Firebase, and Node.js. I enjoy taking an idea, understanding
+              how it can be built, and turning it into a working application.
+              <br><br>
+              Alongside development, I'm actively improving my problem-solving
+              skills through Data Structures and Algorithms practice on
+              platforms like LeetCode and HackerRank. My goal is to keep
+              learning, build meaningful projects, and grow as a software
+              developer.
+            </p>
+
+          </article>
+
+
+          <aside class="card explore-card reveal">
+
+            <h3 class="mini-heading">
+              Currently Exploring
+            </h3>
+
+            <div class="list-grid">
+
+              <div class="list-item">
+                Android Development
+              </div>
+
+              <div class="list-item">
+                Jetpack Compose
+              </div>
+
+              <div class="list-item">
+                Kotlin
+              </div>
+
+              <div class="list-item">
+                Java
+              </div>
+
+              <div class="list-item">
+                Data Structures &amp; Algorithms
+              </div>
+
+              <div class="list-item">
+                Web Development
+              </div>
+
+              <div class="list-item">
+                AI-powered applications
+              </div>
+
+            </div>
+
+          </aside>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================= -->
+
+    <section class="section" id="projects">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <span class="eyebrow">
+            Selected Work
+          </span>
+
+          <h2 class="section-title">
+            Featured Projects
+          </h2>
+
+          <p class="section-subtitle">
+            A focused set of projects across web and Android development,
+            built to learn, experiment, and create practical user experiences.
+          </p>
+
+        </div>
+
+
+        <div class="grid projects-grid">
+
+
+          <!-- =====================
+               MEMORY MIRROR
+          ====================== -->
+
+          <article class="card project-card reveal">
+
+            <div class="project-media">
+
+              <img
+                src="images/memory-mirror.png"
+                alt="Memory Mirror AI project"
+                class="project-image"
+              >
+
+            </div>
+
+
+            <div class="project-body">
+
+              <h3 class="project-title">
+                Memory Mirror AI
+              </h3>
+
+              <p class="project-desc">
+                Memory Mirror AI is a voice-powered reflection platform
+                that compares a user's past and present voice reflections
+                to reveal meaningful changes in communication and expression
+                over time. Users can record or upload voice reflections,
+                which are transcribed, analyzed, and transformed into a
+                personalized reflection report.
+              </p>
+
+
+              <div class="project-features">
+
+                <span class="chip">
+                  Voice journaling
+                </span>
+
+                <span class="chip">
+                  Past vs present voice comparison
+                </span>
+
+                <span class="chip">
+                  Automatic speech transcription
+                </span>
+
+                <span class="chip">
+                  Speech metrics
+                </span>
+
+                <span class="chip">
+                  AI-powered reflection analysis
+                </span>
+
+                <span class="chip">
+                  Personal insights
+                </span>
+
+                <span class="chip">
+                  Google authentication
+                </span>
+
+                <span class="chip">
+                  Cloud storage
+                </span>
+
+              </div>
+
+
+              <div
+                class="chip-row project-tech"
+                aria-label="Technologies used in Memory Mirror AI"
+              >
+
+                <span class="chip tech-chip">
+                  React
+                </span>
+
+                <span class="chip tech-chip">
+                  Vite
+                </span>
+
+                <span class="chip tech-chip">
+                  JavaScript
+                </span>
+
+                <span class="chip tech-chip">
+                  Tailwind CSS
+                </span>
+
+                <span class="chip tech-chip">
+                  Node.js
+                </span>
+
+                <span class="chip tech-chip">
+                  Express
+                </span>
+
+                <span class="chip tech-chip">
+                  Firebase
+                </span>
+
+                <span class="chip tech-chip">
+                  Deepgram
+                </span>
+
+                <span class="chip tech-chip">
+                  Gemini API
+                </span>
+
+                <span class="chip tech-chip">
+                  Vercel
+                </span>
+
+              </div>
+
+
+              <div class="btn-row project-actions">
+
+                <a
+                  class="btn btn-primary"
+                  href="https://memory-mirror-ai-ko3u.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/aggarwalsrishti/memory-mirror-ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- =====================
+               COFFEE APP
+          ====================== -->
+
+          <article class="card project-card reveal">
+
+            <div class="project-media">
+
+              <img
+                src="images/coffeeapp.jpg"
+                alt="Coffee App Android project"
+                class="project-image"
+              >
+
+            </div>
+
+
+            <div class="project-body">
+
+              <h3 class="project-title">
+                Coffee App - "In Progress"
+              </h3>
+
+              <p class="project-desc">
+                A modern Android coffee application built with Kotlin and
+                Jetpack Compose, focused on creating a clean and responsive
+                mobile ordering experience. The project was developed to
+                practice modern Android UI development, Compose layouts,
+                navigation, reusable components, and interactive app interfaces.
+              </p>
+
+
+              <div
+                class="chip-row project-tech"
+                aria-label="Technologies used in Coffee App"
+              >
+
+                <span class="chip tech-chip">
+                  Kotlin
+                </span>
+
+                <span class="chip tech-chip">
+                  Jetpack Compose
+                </span>
+
+                <span class="chip tech-chip">
+                  Android
+                </span>
+
+                <span class="chip tech-chip">
+                  Gradle
+                </span>
+
+              </div>
+
+
+              <div class="btn-row project-actions">
+
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/aggarwalsrishti/Coffee-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROFILES
+    ========================= -->
+
+    <section class="section" id="profiles">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <span class="eyebrow">
+            Profiles
+          </span>
+
+          <h2 class="section-title">
+            Coding &amp; Developer Profiles
+          </h2>
+
+          <p class="section-subtitle">
+            A snapshot of development work, coding practice, and learning
+            progress across professional and problem-solving platforms.
+          </p>
+
+        </div>
+
+
+        <div class="grid profiles-grid">
+
+
+          <!-- LINKEDIN -->
+
+          <article class="card profile-card reveal">
+
+            <div class="platform-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M6.94 6.5A2.44 2.44 0 1 1 6.94 1.62a2.44 2.44 0 0 1 0 4.88ZM2.8 8.33h4.28V22H2.8V8.33Zm6.95 0h4.1v1.87h.06c.57-1.03 1.97-2.12 4.05-2.12 4.33 0 5.13 2.85 5.13 6.55V22H18.8v-5.9c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.24 1.52-2.24 3.1V22H9.75V8.33Z"></path>
+              </svg>
+
+            </div>
+
+            <h3>
+              LinkedIn
+            </h3>
+
+            <p>
+              Professional profile, projects, learning journey,
+              and development activities.
+            </p>
+
+            <a
+              class="btn btn-secondary"
+              href="https://www.linkedin.com/in/srishti-aggarwal-tech/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit LinkedIn
+            </a>
+
+          </article>
+
+
+          <!-- GITHUB -->
+
+          <article class="card profile-card reveal">
+
+            <div class="platform-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.09 3.3 9.4 7.87 10.92.58.11.79-.25.79-.56 0-.27-.01-1.01-.02-1.99-3.2.7-3.88-1.54-3.88-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.97.1-.74.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.71 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.46.11-3.03 0 0 .97-.31 3.17 1.18a10.96 10.96 0 0 1 5.77 0c2.2-1.49 3.16-1.18 3.16-1.18.64 1.57.24 2.74.12 3.03.74.8 1.18 1.83 1.18 3.09 0 4.44-2.7 5.41-5.28 5.69.42.36.79 1.06.79 2.15 0 1.55-.01 2.8-.01 3.18 0 .31.2.68.8.56A11.53 11.53 0 0 0 23.5 12.02C23.5 5.66 18.35.5 12 .5Z"></path>
+              </svg>
+
+            </div>
+
+            <h3>
+              GitHub
+            </h3>
+
+            <p>
+              Projects, source code, experiments, and development work.
+            </p>
+
+            <a
+              class="btn btn-secondary"
+              href="https://github.com/aggarwalsrishti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit GitHub
+            </a>
+
+          </article>
+
+
+          <!-- LEETCODE -->
+
+          <article class="card profile-card reveal">
+
+            <div class="platform-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M13.48 3.07c-.33-.07-2.08-.07-2.43 0C5.9 4.05 2 8.58 2 13.95 2 18.92 5.38 22 9.78 22c2.56 0 4.27-.75 5.7-2.23 1.45-1.5 2.23-3.64 2.23-6.07 0-3.68-1.84-6.92-4.23-8.63ZM11.74 18.9c-1.67 0-2.88-1.33-2.88-3.17 0-1.85 1.2-3.18 2.88-3.18 1.67 0 2.87 1.33 2.87 3.18 0 1.84-1.2 3.17-2.87 3.17Zm2.89-8.82c-.88 0-1.58-.73-1.58-1.64 0-.92.7-1.64 1.58-1.64.9 0 1.58.72 1.58 1.64 0 .91-.68 1.64-1.58 1.64Zm4.1 10.55c.73-.02 1.27-.57 1.27-1.28 0-.68-.54-1.24-1.27-1.27-.72.03-1.28.59-1.28 1.27 0 .71.56 1.26 1.28 1.28Zm.65-4.57c.2 0 .38-.05.55-.14.03-.22.05-.44.05-.67 0-4.15-2.5-7.75-6.08-9.32 1.7 1.75 2.9 4.4 2.9 7.2 0 1.03-.16 2.04-.47 2.93h3.05Z"></path>
+              </svg>
+
+            </div>
+
+            <h3>
+              LeetCode
+            </h3>
+
+            <p>
+              Problem-solving practice and Data Structures &amp;
+              Algorithms progress.
+            </p>
+
+            <a
+              class="btn btn-secondary"
+              href="https://leetcode.com/u/aggarwalsrishti/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit LeetCode
+            </a>
+
+          </article>
+
+
+          <!-- HACKERRANK -->
+
+          <article class="card profile-card reveal">
+
+            <div class="platform-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M12 2 3.75 6.7v5.82c0 5.1 3.53 9.88 8.25 11.03 4.72-1.15 8.25-5.93 8.25-11.03V6.7L12 2Zm4.7 10.35-1.55 1.53-2.28-2.26v5.21H10.7v-5.2L8.42 13.9l-1.55-1.54L12 7.25l4.7 5.1Z"></path>
+              </svg>
+
+            </div>
+
+            <h3>
+              HackerRank
+            </h3>
+
+            <p>
+              Programming practice, challenges, and skill development.
+            </p>
+
+            <a
+              class="btn btn-secondary"
+              href="https://www.hackerrank.com/profile/srishtiaggarwa11"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit HackerRank
+            </a>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================= -->
+
+    <section class="section" id="skills">
+
+      <div class="container">
+
+        <div class="reveal">
+
+          <span class="eyebrow">
+            Capabilities
+          </span>
+
+          <h2 class="section-title">
+            Technical Skills
+          </h2>
+
+          <p class="section-subtitle">
+            Technologies and tools currently used across development
+            practice, projects, and coding exploration.
+          </p>
+
+        </div>
+
+
+        <div class="grid skills-grid">
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Programming
+            </h3>
+
+            <div class="skill-tags">
+
+              <span class="chip">
+                Java
+              </span>
+
+              <span class="chip">
+                Kotlin
+              </span>
+
+              <span class="chip">
+                C
+              </span>
+
+              <span class="chip">
+                Python
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Android Development
+            </h3>
+
+            <div class="skill-tags">
+
+              <span class="chip">
+                Kotlin
+              </span>
+
+              <span class="chip">
+                Jetpack Compose
+              </span>
+
+            
+            </div>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Web Development
+            </h3>
+
+            <div class="skill-tags">
+
+              <span class="chip">
+                HTML
+              </span>
+
+              <span class="chip">
+                CSS
+              </span>
+
+             
+
+            </div>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Backend &amp; Database
+            </h3>
+
+            <div class="skill-tags">
+
+              
+
+              <span class="chip">
+                Firebase
+              </span>
+
+              <span class="chip">
+                MySQL
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Tools &amp; Platforms
+            </h3>
+
+            <div class="skill-tags">
+
+              <span class="chip">
+                Git & Github
+              </span>
+
+
+              <span class="chip">
+                Vercel
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Problem Solving
+            </h3>
+
+            <div class="skill-tags">
+
+              <span class="chip">
+                Data Structures &amp; Algorithms
+              </span>
+
+              <span class="chip">
+                Object-Oriented Programming
+              </span>
+
+              
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section class="section" id="contact">
+
+      <div class="container">
+
+        <article class="card contact-card reveal">
+
+          <span class="eyebrow">
+            Contact
+          </span>
+
+          <h2 class="section-title">
+            Let's Connect
+          </h2>
+
+          <p>
+            I'm always open to connecting with fellow developers,
+            collaborators, and people interested in technology
+            and software development.
+          </p>
+
+
+          <div class="contact-actions">
+
+            <a
+              class="btn btn-primary"
+              href="https://www.linkedin.com/in/srishti-aggarwal-tech/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="https://github.com/aggarwalsrishti"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+
+            <a
+              class="btn btn-secondary"
+              href="mailto:srishtiaggarwal134@gmail.com"
+            >
+              Email
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 Srishti Aggarwal. Built with passion for technology.
+      </p>
+
+      <div class="footer-links">
+
+        <a
+          href="https://www.linkedin.com/in/srishti-aggarwal-tech/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://github.com/aggarwalsrishti"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://leetcode.com/u/aggarwalsrishti/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LeetCode
+        </a>
+
+        <a
+          href="https://www.hackerrank.com/profile/srishtiaggarwa11"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          HackerRank
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const header =
+        document.querySelector(".site-header");
+
+      const menuToggle =
+        document.getElementById("menuToggle");
+
+      const mobileNav =
+        document.getElementById("mobileNav");
+
+      const mobileLinks =
+        mobileNav.querySelectorAll("a");
+
+      const navLinks =
+        document.querySelectorAll(
+          ".nav-links a, .mobile-nav a"
+        );
+
+      const sections =
+        document.querySelectorAll(
+          "main section[id]"
+        );
+
+      const reveals =
+        document.querySelectorAll(".reveal");
+
+
+      /* =========================
+         HEADER SCROLL
+      ========================= */
+
+      function handleHeaderScroll() {
+
+        if (window.scrollY > 10) {
+
+          header.classList.add("scrolled");
+
+        } else {
+
+          header.classList.remove("scrolled");
+
+        }
+
+      }
+
+      handleHeaderScroll();
+
+      window.addEventListener(
+        "scroll",
+        handleHeaderScroll,
+        { passive: true }
+      );
+
+
+      /* =========================
+         MOBILE MENU
+      ========================= */
+
+      menuToggle.addEventListener(
+        "click",
+        function () {
+
+          const isOpen =
+            mobileNav.classList.toggle("open");
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            String(isOpen)
+          );
+
+        }
+      );
+
+
+      mobileLinks.forEach(
+        function (link) {
+
+          link.addEventListener(
+            "click",
+            function () {
+
+              mobileNav.classList.remove("open");
+
+              menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+              );
+
+            }
+          );
+
+        }
+      );
+
+
+      /* =========================
+         SCROLL REVEAL
+      ========================= */
+
+      if ("IntersectionObserver" in window) {
+
+        reveals.forEach(
+          function (element) {
+
+            element.classList.add("animate");
+
+          }
+        );
+
+
+        const revealObserver =
+          new IntersectionObserver(
+            function (entries) {
+
+              entries.forEach(
+                function (entry) {
+
+                  if (entry.isIntersecting) {
+
+                    entry.target.classList.add(
+                      "visible"
+                    );
+
+                    revealObserver.unobserve(
+                      entry.target
+                    );
+
+                  }
+
+                }
+              );
+
+            },
+            {
+              threshold: 0.12
+            }
+          );
+
+
+        reveals.forEach(
+          function (element) {
+
+            revealObserver.observe(
+              element
+            );
+
+          }
+        );
+
+      }
+
+
+      /* =========================
+         ACTIVE NAVIGATION
+      ========================= */
+
+      function setActiveLink() {
+
+        let currentId = "";
+
+        sections.forEach(
+          function (section) {
+
+            const top =
+              section.offsetTop - 140;
+
+            const bottom =
+              top + section.offsetHeight;
+
+            if (
+              window.scrollY >= top &&
+              window.scrollY < bottom
+            ) {
+
+              currentId =
+                section.getAttribute("id");
+
+            }
+
+          }
+        );
+
+
+        navLinks.forEach(
+          function (link) {
+
+            const href =
+              link.getAttribute("href");
+
+            link.classList.toggle(
+              "active",
+              href === "#" + currentId
+            );
+
+          }
+        );
+
+      }
+
+
+      setActiveLink();
+
+      window.addEventListener(
+        "scroll",
+        setActiveLink,
+        { passive: true }
+      );
+
+    });
+
+  </script>
+
+</body>
+</html>
